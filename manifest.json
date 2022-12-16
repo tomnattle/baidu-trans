@@ -1,0 +1,38 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "imgs/map/icon19.png",
+         "38": "imgs/map/icon38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "点击进行网页翻译或文字翻译"
+   },
+   "content_scripts": [ {
+      "css": [ "css/trans-src.css", "css/inject-bar.css" ],
+      "js": [ "js/jquery-1.11.3.js", "js/htmlparser.js", "js/inject-bar.js", "js/trans-lib.js", "js/cs-main.js", "js/trans-src.js", "js/lookup.js", "js/third_party/hm.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "js/gmWrapper.js", "js/jquery-1.7.2.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://hm.baidu.com; object-src 'self'",
+   "description": "百度翻译官方出品。支持27种语言的翻译，浏览外文网页时可一键网页翻译、双语对照查看、查询单词结果等。特别针对20+家海淘网站进行过翻译优化，让你的海淘过程更加得心应手。",
+   "icons": {
+      "128": "imgs/map/icon128.png",
+      "16": "imgs/map/icon16.png",
+      "48": "imgs/map/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw+gkx2y8ZQm/3h4dP7agEmigkX/A0fYt7TA0FjzXFE2dkFstUXuRm4FhpuAh0vylNusPTkHuLKnWDZnbKxm9iJG+x2vqBOIHUKeeMGRKSyyuCte3JrlB5ZzzShQQi1evBB88vV9P9a3A6L0VnZirWKVUsH4CCziLAXY2uvDahRYsvay/ZK4mzxhBbvHAxJJ4GHRsYE5BH3xLYzxUzY7mg1Ld8gkZ7UyUbFRwyv9qon+B3BLhX5zexx+j9DE6eidd3Tkw/ibfjiLshictjmk2xZ5uxH7Fu2spp4Cs6gugc82UZq5xMrq0ZKXT3S7qBzfcx6ANTYl7dQ4Z+Avnu6rF8wIDAQAB",
+   "manifest_version": 2,
+   "name": "百度翻译pro",
+   "options_page": "options.html",
+   "permissions": [ "storage", "http://*/*", "activeTab", "tabs", "cookies", "webRequest", "webRequestBlocking", "sessions", "webNavigation", "activeTab", "browsingData", "*://*/*", "unlimitedStorage", "https://*/*", "contextMenus", "\u003Call_urls>" ],
+   "update_url": "http://upext.chrome.360.cn/intf.php?method=ExtUpdate.query",
+   "version": "1.2.6",
+   "web_accessible_resources": [ "imgs/map/*.png", "imgs/map/sound.gif" ]
+}
