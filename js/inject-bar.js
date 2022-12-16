@@ -488,8 +488,8 @@ function injectBar(from, to, langmap) {
       })
       .css({
         position: "fixed",
-        right: "30px",
-        top: "7px",
+        right: "10px",
+        top: "87px",
         height: "23px",
         "background-color": "#4395FF",
         border: "none",
@@ -826,7 +826,7 @@ function moveFixNodes() {
   for (var idx in fixNodes) {
     var top = parseInt($(fixNodes[idx]).css("top"), 10);
     if (top < 36) {
-      $(fixNodes[idx]).css("top", "36px");
+      $(fixNodes[idx]).css("top", "0px");
       var movedFixNode = { node: fixNodes[idx], orgTop: top };
       movedFixNodes.push(movedFixNode);
     }
