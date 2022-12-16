@@ -81,7 +81,7 @@ function translateByPopup() {
       var body_margin_top = $("body").css("margin-top");
       /* eslint-disable fecs-camelcase */
       var new_margin_top = parseInt(body_margin_top, 10);
-      new_margin_top += 36;
+      new_margin_top += 0;
       $("body").attr(
         "style",
         "position: relative; margin-top: " + new_margin_top + "px !important;"

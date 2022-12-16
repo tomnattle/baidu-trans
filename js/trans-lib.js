@@ -777,7 +777,7 @@ function langDetect() {
       }
     });
   var body_margin_top = $("body").css("margin-top");
-  var new_margin_top = parseInt(body_margin_top, 10) + 36;
+  var new_margin_top = parseInt(body_margin_top, 10) + 0;
   $("body").attr(
     "style",
     "position: relative; margin-top: " + new_margin_top + "px !important;"
