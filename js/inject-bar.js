@@ -617,7 +617,7 @@ function injectBar(from, to, langmap) {
     if ($("#detect").length > 0) {
       $("#detect").remove();
     } else {
-      new_margin_top += 36;
+      new_margin_top += 0;
     }
     $("body").attr(
       "style",
