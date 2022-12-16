@@ -4,5 +4,7 @@
 ## 使用方法
 chrome插件设置开发模式开启，加载根目录
 
+![截图](https://github.com/tomnattle/baidu-trans/blob/b0195f00d7381eaa5569de9b61b6665571ae6c02/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16711581446707.png
+)
 
 
